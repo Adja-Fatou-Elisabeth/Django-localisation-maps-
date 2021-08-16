@@ -1,0 +1,13 @@
+{% load i18n %}  {#1#}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Index</title>
+</head>
+<body>
+    {% for loca in object_list %}
+       Localisation  <li>{{loca.location}} {{loca.location.city}}</li>
+    {% endfor %}
+</body>
+</html>
